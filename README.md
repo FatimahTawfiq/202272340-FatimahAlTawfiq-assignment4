@@ -52,3 +52,5 @@ This section include a form that is compined of The sender name email and the me
 
 # AI useage
 To enhance the development, Artificial Intelligence (AI) was used as a supportive tool in this homework. It has been used for debugging the code to find the errors and facilitate the understanding of new concepts. More datailes are written on ai-usage-report.md file.
+----
+Note: to watch the demo-video in presentaion folder you have to download it from the download icon
