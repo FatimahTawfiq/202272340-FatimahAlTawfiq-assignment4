@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Taking the screen width for devices compatability -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fatimah Al Tawfiq Portfolio</title>
+
+        <!-- connecting the css and JS files to the html -->
+         <!-- 'defer' ensures the script runs after the html is fully parsed -->
+        <link rel="stylesheet" href="style.css"> 
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <!-- navigatin bar section for moving to each section in the web page and change the mode to dark or light -->
+        <section id="topBar">
+            <nav>
+                <ul>
+                    <!-- using sections' id to jump to specific section in the page -->
+                    <li><a href="#About">About me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#MyProjects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    
+
+                    <li id="mode_icon">
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 70 70" fill="currentColor">
+                            <path d="M35 61.25C27.7083 61.25 21.5104 58.6979 16.4063 53.5938C11.3021 48.4896 8.75 42.2917 8.75 35C8.75 27.7083 11.3021 21.5104 16.4063 16.4063C21.5104 11.3021 27.7083 8.75 35 8.75C35.6806 8.75 36.349 8.77431 37.0052 8.82292C37.6615 8.87153 38.3056 8.94444 38.9375 9.04167C36.9444 10.4514 35.3524 12.2865 34.1615 14.5469C32.9705 16.8073 32.375 19.25 32.375 21.875C32.375 26.25 33.9063 29.9687 36.9688 33.0313C40.0313 36.0938 43.75 37.625 48.125 37.625C50.7986 37.625 53.2535 37.0295 55.4896 35.8385C57.7257 34.6476 59.5486 33.0556 60.9583 31.0625C61.0556 31.6944 61.1285 32.3385 61.1771 32.9948C61.2257 33.651 61.25 34.3194 61.25 35C61.25 42.2917 58.6979 48.4896 53.5938 53.5938C48.4896 58.6979 42.2917 61.25 35 61.25ZM35 55.4167C39.2778 55.4167 43.1181 54.2378 46.5208 51.8802C49.9236 49.5226 52.4028 46.4479 53.9583 42.6563C52.9861 42.8993 52.0139 43.0938 51.0417 43.2396C50.0694 43.3854 49.0972 43.4583 48.125 43.4583C42.1458 43.4583 37.0538 41.3559 32.849 37.151C28.6441 32.9462 26.5417 27.8542 26.5417 21.875C26.5417 20.9028 26.6146 19.9306 26.7604 18.9583C26.9063 17.9861 27.1007 17.0139 27.3438 16.0417C23.5521 17.5972 20.4774 20.0764 18.1198 23.4792C15.7622 26.8819 14.5833 30.7222 14.5833 35C14.5833 40.6389 16.5764 45.4514 20.5625 49.4375C24.5486 53.4236 29.3611 55.4167 35 55.4167Z" fill="#1D1B20"/>
+                        </svg>
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 70 70" fill="currentColor" stroke="currentColor">
+                            <path d="M35.0001 2.91667V8.75M35.0001 61.25V67.0833M12.3084 12.3083L16.4501 16.45M53.5501 53.55L57.6917 57.6917M2.91675 35H8.75008M61.2501 35H67.0834M12.3084 57.6917L16.4501 53.55M53.5501 16.45L57.6917 12.3083M49.5834 35C49.5834 43.0542 43.0542 49.5833 35.0001 49.5833C26.9459 49.5833 20.4167 43.0542 20.4167 35C20.4167 26.9458 26.9459 20.4167 35.0001 20.4167C43.0542 20.4167 49.5834 26.9458 49.5834 35Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </li>    
+                </ul>
+            </nav>
+        </section>
+
+        <div id="myName">
+            <!-- introduction -->
+            <h3 id="greeting">Hi!</h3>
+            <h3>I am</h3>
+            <h1>Fatimah Al Tawfiq</h1><br>
+            <h3>Creative Web Developer blending technical logic with modern design</h3>
+            <p>Today's Quote:</p>
+            <p id="quote"></p>
+        </div>
+
+        <section id="About">
+            <h2>About Me</h2>
+            <p>I am a Software Engineering student at King Fahd University of Petroleum and Minerals (KFUPM)
+                specializing in AI and Web Development. My goal is to build the next generation of digital
+                solutions by combining intelligent algorithms with intuitive web design. I enjoy learning 
+                new things and turning complex ideas into practical software that makes a real difference.
+            </p>
+
+            <div id="countdown">
+                <h3>Time remaining to graduate from KFUPM:</h3>
+                <div id="countdown-timer">
+                    <span id="days">0</span> days 
+                    <span id="hours">0</span> hours 
+                    <span id="minutes">0</span> minutes 
+                    <span id="seconds">0</span> seconds
+                </div>
+            </div>
+        </section>
+
+        <section id="Skills">
+            <h2>My Skills</h2>
+        
+            <div class="queue-wrapper">
+                <div class="queue-content">
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"><span>JS</span></div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"><span>SQL</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="MyProjects">
+            <h2>My Projects</h2>
+            <!-- Project Filter Menu -->
+            <nav id="projectFiltering">
+                <ul>
+                    <!-- 'data-filter' attributes are used by JS to show specific projects -->
+                    <li data-filter="all" class="active">All</li>
+                    <li data-filter="ai">AI</li>
+                    <li data-filter="database">Database</li>
+                    <li data-filter="app">Desktop Application</li>
+                    <li data-filter="websites">Websites</li>
+                </ul>
+            </nav>
+            <div id="sortControls">
+                <span>Sort by Date: </span>
+                <button data-sort="oldest" class="sort-btn">Olde to new</button>
+                <button data-sort="newest" class="sort-btn active-sort">New to old</button>
+            </div>
+            
+            <!-- Project Cards: 'data-category' matches the 'data-filter' values for selection -->
+            <div class="projects-container">
+                <div class="pCard" id="p1" data-category="ai" data-date="2024-04-20">
+                    <img src="Images/letter.jpg" alt="English alphsbetic letters">
+                    <div class="content">
+                        <!-- project name -->
+                        <h4>Letter Recognition</h4>
+                        <!-- project description -->
+                        <p>
+                            Applying machine learning and Deep learning models (knn, SVM, DLL) on extracted features 
+                            from English letter images, reaching 97% accuracy.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pCard" id="p2" data-category="websites" data-date="2025-01-13">
+                    <img src="Images/SIHW.png" alt="Student Impact Hup web interface" width="350">
+                    <div class="content">
+                        <!-- project name -->
+                        <h4>Student Impact Hub website</h4>
+                        <!-- project description -->
+                        <p>
+                            Designed and prototyped a university volunteering platform connecting students 
+                            with campus clubs to enhance participation in community activities.<br> Validated 
+                            requirements through an interactive Figma prototype prior to implementation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pCard" id="p3" data-category="ai" data-date="2024-01-10">
+                    <img src="Images/Airline.png" alt="" width="350">
+
+                    <div class="content">
+                        <!-- project name -->
+                        <h4>Airline passengers satisfaction recognition</h4>
+                        <!-- project description -->
+                        <p>Applying different machine learning models (DT, RF,GaussianNB) on the Airline passenger 
+                            database to classify their satisfaction, reaching 96% accuracy.
+                        </p>
+                    </div>
+                </div>
+                    
+                <div class="pCard" id="p4" data-category="app" data-date="2025-12-18">
+                    <img src="Images/file.png" alt="" width="350">
+                    <div class="content">
+                        <!-- project name -->
+                        <h4>FILE TRAVERSER APP</h4>
+                        <!-- project description -->
+                        <p>Implementing a VB.NET desktop application using Composite and Strategy patterns to traverse and visualize a recursive file system hierarchy. 
+                            Developing a dynamic Tree and Bar chart visualization from scratch using custom panel drawing to display folder sizes. 
+                            Implementing automatic scrollbars to handle a large-scale folder structure.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pCard" id="p5" data-category="database" data-date="2025-10-27">
+                    <img src="Images/horses.png" alt="" width="350">
+                    <div class="content">
+                        <!-- project name -->
+                        <h4>HORSE RACING DATABASE SYSTEM</h4>
+                        <!-- project description -->
+                        <p>Digitalizing manual race operations using JavaFX and JDBC API for MySQL database connection.
+                            Developing backend logic allowing admins to manage race results, perform cross-stable horse transfer, and execute cascaded deletion of owner records.
+                            Implementing stored procedures and triggers to calculate trainer statistics, enabling guests to track performance and total winnings.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pCard" id="p6"  data-category="app" data-date="2025-10-02">
+                    <img src="Images/schedule.png" alt="" width="350">
+                    <div class="content">
+                        <!-- project name -->
+                        <h4>KFUPM CAMPUS ROUTE & SCHEDULE VISUALIZATION APP</h4>
+                        <!-- project description -->
+                        <p>Developing a desktop VB.NET application applying core software design principles. 
+                            Enhancing KFUPM students' registration experience by implementing the section unique id number 
+                            (CRN) and weekday filtering with dynamic recalculation for building count and travel distance 
+                            whenever the input is changed. 
+                            Designing a custom Excel parsing method to extract section data and map it into structured objects 
+                            for (courses, sections, buildings).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="Contact">
+            <h2>Contact</h2>
+
+            <form id="contactForm" method="get" novalidate>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <!-- Span for displaying dynamic error messages by JS -->
+                    <span class="errorMessage" id="emailError"></span>
+                </p>
+                <p>
+                    <!-- create a lable and a textarea to inhance the usability when writing the 
+                     message, where uses can easily read the message content 
+                     -->
+                    <label for="message">message:</label><br><br>
+                    <textarea name="message" placeholder="Enter your message" id="message" required></textarea>
+                    <!-- Span for displaying dynamic error messages by JS -->
+                    <span class="errorMessage" id="messageError"></span>
+                </p>
+                <P>
+                    <input type="submit" value="Send Message">
+                </P>
+            </form>
+
+        </section>
+
+    </body>
+</html>
